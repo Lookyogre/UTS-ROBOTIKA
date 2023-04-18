@@ -1,0 +1,108 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+  basicTimeStep 8
+}
+Viewpoint {
+  orientation -0.27049335191983864 0.27015729205597033 0.9240391680638625 1.6509647892660293
+  position -0.04554223476041125 -1.3857923245712875 0.8790323868614798
+}
+TexturedBackground {
+}
+RectangleArena {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+Solid {
+  translation -0.41421423489248943 0.4499098609906533 0.049897269920227603
+  rotation -0.9934218379185153 0.08382296743006679 0.07801770361794307 1.6492524925649605
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BALL_GEOMETRY Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+  linearVelocity 0.00016352618650155296 -9.521236507541369e-05 3.2564605360345686e-16
+  angularVelocity 0.0019042473015082734 0.003270523730031059 0.003270806307086822
+}
+WoodenBox {
+  translation -0.1310571577641176 0.3122733010253732 0.04990187262194803
+  rotation -0.0007332606045567503 -0.013873780724853096 -0.9999034856111286 0.0017297446782326253
+  size 0.1 0.1 0.1
+  mass 2
+}
+WoodenBox {
+  hidden linearVelocity_0 -2.816342045144766e-18 -3.789486265893701e-18 2.414965108507781e-16
+  hidden angularVelocity_0 1.2526347291806838e-16 -3.3481932852293004e-17 -9.563888014285043e-18
+  translation 0.3158589115824424 -0.3768649404284464 0.04990189999999999
+  rotation -1.7388397754930951e-12 3.6785265239229645e-12 1 2.027777154911251e-06
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+  mass 2
+}
+WoodenBox {
+  translation -0.30327800076101175 -0.23019552301676033 0.04990189999999996
+  rotation -5.9645134220252694e-12 -5.1496866395658883e-14 1 0.0004895686937329356
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+  mass 2
+}
+E-puck {
+  hidden position_0_0 6712.753970377307
+  hidden position_0_1 6670.653820777057
+  hidden linearVelocity_0 -1.0095677219152925e-07 5.327041516706106e-06 1.3022838410866527e-06
+  hidden angularVelocity_0 -8.866198942725781e-05 -1.707332648571613e-05 2.218986278196518
+  hidden rotation_1 0 0.9999999999999999 0 2.3120623095089115
+  hidden linearVelocity_1 -0.01220590360055891 0.056290320684365756 -2.3997058388955814e-08
+  hidden angularVelocity_1 -3.068708909777646 -0.6662635404596715 2.2186198384845928
+  hidden rotation_2 0 -1 0 2.088975447663576
+  hidden linearVelocity_2 0.012205224808673934 -0.05627883714259297 2.385853104309296e-08
+  hidden angularVelocity_2 3.068531590183274 0.6662293729042844 2.21861945010767
+  translation -0.4450097498486627 0.23532882652632978 -8.124383077351069e-06
+  rotation -7.4139549814433546e-06 -9.282630910544428e-06 -0.9999999999294329 1.3477608188461592
+  controllerArgs [
+    ""
+  ]
+}
+Solid {
+  translation -0.381237770756679 0.30067322951114267 0.04989726992022763
+  rotation 0.7554590071753584 0.4989745319799215 -0.42462466357130063 -2.905000415799331
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BALL_GEOMETRY Sphere {
+        radius 0.05
+        subdivision 2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+  linearVelocity -4.7040552197342834e-05 7.01155682916252e-05 -3.6690254168491316e-16
+  angularVelocity -0.0014023113658325039 -0.0009408110439468566 -0.0026027146426744895
+}
